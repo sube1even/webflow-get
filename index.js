@@ -78,7 +78,7 @@ async function processSite (config) {
     console.log('Fetching pages')
 
     if (config.pages.valid('/index')) {
-      //index = formatHTML(index)
+      index = formatHTML(index)
       await writeFile('index.html', index)
     }
 
@@ -105,7 +105,7 @@ async function processSite (config) {
 async function getPage (site, page, timestamp) {
   try {
     let html = await retry(() => fetchPage(`${site}/${page}`, timestamp), RETRY_COUNT)
-    //html = formatHTML(html)
+    html = formatHTML(html)
     return { page, html }
   } catch (error) {
     console.error(`Failed getting page ${page}: ${error.message}`)

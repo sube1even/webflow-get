@@ -22,7 +22,7 @@
     "@actions/github": "^5.0.0",
     "node-fetch": "^2.6.1",
     "picomatch": "^2.3.0",
-    "prettier": "^2.3.2",
+    "prettier": "^2.8.0",
     "yaml": "^1.10.2"
   }
 }

@@ -216,7 +216,7 @@ function formatCSS (css) {
 }
 
 function formatHTML (html) {
-  //html = prettier.format(html, { parser: 'html', printWidth: 200 })
+  html = prettier.format(html, { parser: 'html', printWidth: 200 })
 
   // Cut the timestamp line
   const start = html.indexOf('\n') + 1

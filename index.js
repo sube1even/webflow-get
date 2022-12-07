@@ -216,7 +216,7 @@ function formatCSS (css) {
 }
 
 function formatHTML (html) {
-  html = prettier.format(html, { parser: 'html', embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore' })
+  html = prettier.format(html, { parser: 'html', embeddedLanguageFormatting: 'off', htmlWhitespaceSensitivity: 'ignore', jsxBracketSameLine:true })
 
   // Cut the timestamp line
   const start = html.indexOf('\n') + 1
